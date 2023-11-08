@@ -1,0 +1,6 @@
+Exercício: Tela de Perfil do Usuário
+
+Objetivo:
+Criar uma tela de perfil de usuário com vários componentes de UI, como imagem de perfil, nome, informações adicionais, botão de edição de perfil e checkbox de notificações.
+
+Faça que ela fique igual ao Screenshot.png.
