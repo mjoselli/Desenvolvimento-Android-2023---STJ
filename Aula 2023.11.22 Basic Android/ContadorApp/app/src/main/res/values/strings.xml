@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ContadorApplication</string>
+    <string name="main_image_description">Imagem Principal</string>
+    <string name="hello">Olá</string>
+    <string name="textview_number_hint">A number</string>
+    <string name="button_text">Click</string>
+</resources>
