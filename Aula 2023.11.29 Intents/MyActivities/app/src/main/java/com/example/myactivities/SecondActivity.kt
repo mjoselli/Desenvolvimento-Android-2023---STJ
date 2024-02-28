@@ -1,6 +1,7 @@
 package com.example.myactivities
 
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -35,6 +36,9 @@ class SecondActivity : AppCompatActivity() {
         }
         listView.setOnItemLongClickListener { adapterView, view, i, l ->
             list.set(i, "e")
+            view.setBackgroundColor(Color.BLUE)
+
+
             adapter.notifyDataSetChanged()
             return@setOnItemLongClickListener true
         }
