@@ -1,5 +1,6 @@
 package com.example.myrecyclerview
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
@@ -7,10 +8,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myrecyclerview.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
+        binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
         binding.mainRecyclerView.adapter = CityAdapter(object : CityAdapter.OnCityClickListener {
             override fun onCityClick(view: android.view.View, position: Int) {
                 Singleton.cities[position].apply {
@@ -39,8 +40,13 @@ class MainActivity : AppCompatActivity() {
         binding.mainRecyclerView.layoutManager = LinearLayoutManager(this)
 
         binding.addItemButton.setOnClickListener {
-            Singleton.cities.add(City("New City", 1000000, false))
-            binding.mainRecyclerView.adapter?.notifyItemInserted(Singleton.cities.size - 1)
+            val intent = Intent(this, CityDetailActivity::class.java)
+            startActivity(intent)
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        binding.mainRecyclerView.adapter?.notifyDataSetChanged()
     }
 }
