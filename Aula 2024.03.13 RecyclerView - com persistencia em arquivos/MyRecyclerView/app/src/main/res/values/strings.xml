@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My RecyclerView</string>
+    <string name="add_new_city">Add New City</string>
+</resources>
