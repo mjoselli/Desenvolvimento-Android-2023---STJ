@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My RecyclerView</string>
+    <string name="add_new_city">Add New City</string>
+    <string name="city">City</string>
+    <string name="name">name</string>
+    <string name="population">population</string>
+    <string name="save">Save</string>
+    <string name="capital">Capital</string>
+    <string name="item_deleted">Item Deleted</string>
+    <string name="undo">Undo</string>
+</resources>
