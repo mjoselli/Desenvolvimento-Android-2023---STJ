@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Unit Converter App</string>
+    <string name="fechar">Fechar</string>
+    <string name="historico">Histórico</string>
+    <string name="limpar">Limpar tudo</string>
+    <string name="selecionar_conversao">Selecione a conversão</string>
+    <string name="tipo_conversao">Tipo de conversão</string>
+    <string name="icone">Ícone</string>
+    <string name="entre_valor">Entre com o valor</string>
+    <string name="converte">Converter</string>
+    <string name="texto_igual_a">é igual a</string>
+    <string name="lb_kg">Libras para Kilogramas</string>
+    <string name="kg_lb">Kilogramas para Libras</string>
+    <string name="kg">Kg</string>
+    <string name="lb">Lb</string>
+    <string name="mi_km">Milhas para Kilometros</string>
+    <string name="km_mi">Kilometros para Milhas</string>
+    <string name="km">Km</string>
+    <string name="mi">Mi</string>
+</resources>
